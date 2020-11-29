@@ -1,0 +1,40 @@
+<?php
+
+return [
+
+    'text_cms'                  => 'script',
+    'text_dashboard'            => 'Dashboard',
+    'text_properties'           => 'Properties',
+    'text_categories'           => 'Categories',
+    'text_locations'            => 'Locations',
+    'text_types'                => 'Types',
+    'text_amenities'            => 'Amenities',
+    'text_features'             => 'Features',
+    'text_reviews'              => 'Reviews',
+    'text_services'             => 'Services',
+    'text_bookings'             => 'Bookings',
+    'text_pages'                => 'Pages',
+    'text_blog'                 => 'Blog',
+    'text_posts'                => 'Posts',
+    'text_users'                => 'Users',
+    'text_owners'               => 'Owners',
+    'text_payments'             => 'Payments',
+    'text_purchases'            => 'Purchases',
+    'text_requests'             => 'Requests',
+    'text_settings'             => 'Settings',
+    'text_site_settings'        => 'Site Settings',
+    'text_user_settings'        => 'User Settings',
+    'text_owners_settings'      => 'Owners Settings',
+    'text_properties_settings'  => 'Properties Settings',
+    'text_payment_settings'     => 'Business Settings',
+    'text_local_settings'       => 'Localisation Settings',
+    'text_lang_settings'        => 'Language Settings',
+    'text_services_settings'    => 'Services Settings',
+    'text_banner_settings'      => 'Banners settings',
+    'text_email_settings'       => 'Email Settings',
+    'text_my_account'           => 'My Account',
+    'text_logout'               => 'Logout',
+    'text_my_website'           => 'My Website',
+    'text_copyright'            => 'Copyright &copy; '. date('Y') .', All Rights Reserved - '
+
+];
