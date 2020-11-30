@@ -1,48 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title><?php echo e($static_data['site_settings']['site_name']); ?></title>
-    <meta charset="UTF-8">
-    <meta name="title" content="<?php echo e($static_data['site_settings']['site_name']); ?>">
-    <meta name="description" content="<?php echo e($static_data['site_settings']['site_description']); ?>">
-    <meta name="keywords" content="<?php echo e($static_data['site_settings']['site_keywords']); ?>">
-    <meta name="author" content="<?php echo e($static_data['site_settings']['site_name']); ?>">
-    <meta property="og:title" content="<?php echo e($static_data['site_settings']['site_name']); ?>" />
-    <meta property="og:image" content="<?php echo e(URL::asset('/assets/images/home/').'/'.$static_data['design_settings']['slider_background']); ?>" />
-    
 
-    <link rel="stylesheet" href="<?php echo e(URL::asset('assets/estay/css/normalize.css')); ?>" >
-    <link rel="stylesheet" href="<?php echo e(URL::asset('assets/estay/css/bootstrap.min.css')); ?>" >
-    <link rel="stylesheet" href="<?php echo e(URL::asset('assets/estay/css/daterangepicker.css')); ?>" >
-    <link rel="stylesheet" href="<?php echo e(URL::asset('assets/estay/css/slick.css')); ?>" >
-    <link rel="stylesheet" href="<?php echo e(URL::asset('assets/estay/css/main.css')); ?>" >
-
-  <meta name="theme-color" content="#fafafa">
-
-    <?php if($static_data['site_settings']['google_analytics']): ?>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', '<?php echo e($static_data['site_settings']['google_analytics']); ?>', 'auto');
-            ga('send', 'pageview');
-
-        </script>
-    <?php endif; ?>
-    <?php echo $custom_css; ?>
-
-</head>
-<body class="home-page">
- 
-
-
-
-
-      <header>
+<?php $__env->startSection('content'); ?>
+<header>
     <!-- Navigation -->
     <nav class="navbar navbar-home navbar-expand-lg bg-white fixed-top">
       <div class="w-100 px-5">
@@ -59,22 +17,22 @@
               <a class="nav-link text-primary-1">Theo dõi chúng tôi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="<?php echo e($static_data['site_settings']['social_facebook']); ?>">
                 <img class="icon hover-translate-y-n3" src="assets/estay/images/icon/twitter.png" />
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="<?php echo e($static_data['site_settings']['social_twitter']); ?>">
                 <img class="icon hover-translate-y-n3" src="assets/estay/images/icon/facebook.png" />
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="<?php echo e($static_data['site_settings']['social_instagram']); ?>">
                 <img class="icon hover-translate-y-n3" src="assets/estay/images/icon/instagram.png" />
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" hhref="<?php echo e($static_data['site_settings']['social_youtube']); ?>">
                 <img class="icon hover-translate-y-n3" src="assets/estay/images/icon/youtube.png" />
               </a>
             </li>
@@ -85,9 +43,8 @@
               Giao diện khác
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="home-1.html">Giao diện 1</a>
-              <a class="dropdown-item" href="home-2.html">Giao diện 2</a>
-              <a class="dropdown-item" href="#">Giao diện 3</a>
+              <a class="dropdown-item" href="/">Giao diện 1</a>
+              <a class="dropdown-item" href="/explore/properties">Giao diện 2</a>
             </div>
           </div>
 
@@ -276,7 +233,10 @@
           <div class="col-lg-2 col-md-12">
             <button type="button" class="btn btn-search btn-primary-2 btn-block mh-50">TÌM</button>
           </div>
-          <div class="col-lg-1 col-md-3 text-right">
+          <div class="col-lg-1 col-md-3 text-right" style="position: fixed;
+    right: 40px;
+    bottom: 30px;
+    z-index: 99;">
             <button type="button" class="btn btn-chat btn-primary-2">
               <img class="icon" src="assets/estay/images/icon/chat.png" />
             </button>
@@ -404,9 +364,185 @@
       </div>
       <div class="item-slider d-flex justify-content-center">
 
-         <?php $__currentLoopData = $properties; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $property): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
-           <?php echo $__env->make('home.partials.property_grid', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-         <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>   
+         
+
+         <div class="item-slider d-flex justify-content-center">
+        <div class="item">
+          <a href="single.html" class="item-img">
+            <img class="item-thumb" src="assets/estay/images/item/resort-001.jpg">
+          </a>
+          <div class="item-body">
+            <span class="date"><img class="icon-ssm mr-1" src="assets/estay/images/icon/calendar.svg">18/01/2020 - 31/12/2020</span>
+            <h3 class="item-title my-4">
+              <a href="single.html">Khám phá Đà Lạt cho 2 người - 1N1Đ Phòng Standard</a>
+            </h3>
+            <div class="d-flex justify-content-between">
+              <div class="price mr-2">
+                <div class="text-muted">11.254.000đ</div>
+                <p class="lead mb-0">5.600.000đ</p>             
+              </div>
+              <div class="d-flex align-items-center">
+                <a href="single.html" class="btn btn-estay-primary">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="item-footer"> 
+            <div class="rating">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <span class="ml-2">(20 đánh giá)</span>
+            </div>
+            <div class="buyers">
+              <img class="icon-ssm" src="assets/estay/images/icon/user.svg">
+              50 người mua
+            </div>
+          </div>
+        </div>
+        <!-- End item -->
+        <div class="item">
+          <a href="single.html" class="item-img">
+            <img class="item-thumb" src="assets/estay/images/item/resort-001.jpg">
+          </a>
+          <div class="item-body">
+            <span class="date"><img class="icon-ssm mr-1" src="assets/estay/images/icon/calendar.svg">18/01/2020 - 31/12/2020</span>
+            <h3 class="item-title my-4">
+              <a href="single.html">Khám phá Đà Lạt cho 2 người - 1N1Đ Phòng Standard</a>
+            </h3>
+            <div class="d-flex justify-content-between">
+              <div class="price mr-2">
+                <div class="text-muted">11.254.000đ</div>
+                <p class="lead mb-0">5.600.000đ</p>             
+              </div>
+              <div class="d-flex align-items-center">
+                <a href="single.html" class="btn btn-estay-primary">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="item-footer"> 
+            <div class="rating">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <span class="ml-2">(20 đánh giá)</span>
+            </div>
+            <div class="buyers">
+              <img class="icon-ssm" src="assets/estay/images/icon/user.svg">
+              50 người mua
+            </div>
+          </div>
+        </div>
+        <!-- End item -->
+        <div class="item">
+          <a href="single.html" class="item-img">
+            <img class="item-thumb" src="assets/estay/images/item/resort-001.jpg">
+          </a>
+          <div class="item-body">
+            <span class="date"><img class="icon-ssm mr-1" src="assets/estay/images/icon/calendar.svg">18/01/2020 - 31/12/2020</span>
+            <h3 class="item-title my-4">
+              <a href="single.html">Khám phá Đà Lạt cho 2 người - 1N1Đ Phòng Standard</a>
+            </h3>
+            <div class="d-flex justify-content-between">
+              <div class="price mr-2">
+                <div class="text-muted">11.254.000đ</div>
+                <p class="lead mb-0">5.600.000đ</p>             
+              </div>
+              <div class="d-flex align-items-center">
+                <a href="single.html" class="btn btn-estay-primary">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="item-footer"> 
+            <div class="rating">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <span class="ml-2">(20 đánh giá)</span>
+            </div>
+            <div class="buyers">
+              <img class="icon-ssm" src="assets/estay/images/icon/user.svg">
+              50 người mua
+            </div>
+          </div>
+        </div>
+        <!-- End item -->
+        <div class="item">
+          <a href="single.html" class="item-img">
+            <img class="item-thumb" src="assets/estay/images/item/resort-001.jpg">
+          </a>
+          <div class="item-body">
+            <span class="date"><img class="icon-ssm mr-1" src="assets/estay/images/icon/calendar.svg">18/01/2020 - 31/12/2020</span>
+            <h3 class="item-title my-4">
+              <a href="single.html">Khám phá Đà Lạt cho 2 người - 1N1Đ Phòng Standard</a>
+            </h3>
+            <div class="d-flex justify-content-between">
+              <div class="price mr-2">
+                <div class="text-muted">11.254.000đ</div>
+                <p class="lead mb-0">5.600.000đ</p>             
+              </div>
+              <div class="d-flex align-items-center">
+                <a href="single.html" class="btn btn-estay-primary">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="item-footer"> 
+            <div class="rating">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <span class="ml-2">(20 đánh giá)</span>
+            </div>
+            <div class="buyers">
+              <img class="icon-ssm" src="assets/estay/images/icon/user.svg">
+              50 người mua
+            </div>
+          </div>
+        </div>
+        <!-- End item -->
+        <div class="item">
+          <a href="single.html" class="item-img">
+            <img class="item-thumb" src="assets/estay/images/item/resort-001.jpg">
+          </a>
+          <div class="item-body">
+            <span class="date"><img class="icon-ssm mr-1" src="assets/estay/images/icon/calendar.svg">18/01/2020 - 31/12/2020</span>
+            <h3 class="item-title my-4">
+              <a href="single.html">Khám phá Đà Lạt cho 2 người - 1N1Đ Phòng Standard</a>
+            </h3>
+            <div class="d-flex justify-content-between">
+              <div class="price mr-2">
+                <div class="text-muted">11.254.000đ</div>
+                <p class="lead mb-0">5.600.000đ</p>             
+              </div>
+              <div class="d-flex align-items-center">
+                <a href="single.html" class="btn btn-estay-primary">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="item-footer"> 
+            <div class="rating">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <img class="star" src="assets/estay/images/icon/star-active.svg">
+              <span class="ml-2">(20 đánh giá)</span>
+            </div>
+            <div class="buyers">
+              <img class="icon-ssm" src="assets/estay/images/icon/user.svg">
+              50 người mua
+            </div>
+          </div>
+        </div>
+        <!-- End item -->
+      </div>
     </section>
 
     <section class="section">
@@ -510,95 +646,42 @@
       <div class="container">
         <div class="row">
             <div class="col">
-              <h5>Trợ giúp</h5>
+              <h5><?php echo e($static_data['strings']['opt_footer_menu1_head']); ?></h5>
               <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
+                  <a href="<?php echo e($static_data['design_settings']['footer_menu1_link1']); ?>"><?php echo e($static_data['strings']['opt_footer_menu1_text1']); ?></a>
               </p>
               <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
+                <a href="<?php echo e($static_data['design_settings']['footer_menu1_link2']); ?>"><?php echo e($static_data['strings']['opt_footer_menu1_text2']); ?></a>
               </p>
               <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
+                  <a href="<?php echo e($static_data['design_settings']['footer_menu1_link3']); ?>"><?php echo e($static_data['strings']['opt_footer_menu1_text3']); ?></a>
               </p>
               <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
+                <a href="<?php echo e($static_data['design_settings']['footer_menu1_link4']); ?>"><?php echo e($static_data['strings']['opt_footer_menu1_text4']); ?></a>
               </p>
               <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
-              </p>
-            </div>
-            <div class="col">
-              <h5>Trợ giúp</h5>
-              <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
-              </p>
-              <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
-              </p>
-              <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
-              </p>
-              <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
-              </p>
-              <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
+                <a href="<?php echo e($static_data['design_settings']['footer_menu1_link5']); ?>"><?php echo e($static_data['strings']['opt_footer_menu1_text5']); ?></a>
               </p>
             </div>
             <div class="col">
-              <h5>Trợ giúp</h5>
+              <h5><?php echo e($static_data['strings']['opt_footer_menu2_head']); ?></h5>
               <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
+                  <a href="<?php echo e($static_data['design_settings']['footer_menu2_link1']); ?>"><?php echo e($static_data['strings']['opt_footer_menu2_text1']); ?></a>
               </p>
               <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
+                <a href="<?php echo e($static_data['design_settings']['footer_menu2_link2']); ?>"><?php echo e($static_data['strings']['opt_footer_menu2_text2']); ?></a>
               </p>
               <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
+                  <a href="<?php echo e($static_data['design_settings']['footer_menu2_link3']); ?>"><?php echo e($static_data['strings']['opt_footer_menu2_text3']); ?></a>
               </p>
               <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
+                <a href="<?php echo e($static_data['design_settings']['footer_menu2_link4']); ?>"><?php echo e($static_data['strings']['opt_footer_menu2_text4']); ?></a>
               </p>
               <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
-              </p>
-            </div>
-            <div class="col">
-              <h5>Trợ giúp</h5>
-              <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
-              </p>
-              <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
-              </p>
-              <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
-              </p>
-              <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
-              </p>
-              <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
+                <a href="<?php echo e($static_data['design_settings']['footer_menu2_link5']); ?>"><?php echo e($static_data['strings']['opt_footer_menu2_text5']); ?></a>
               </p>
             </div>
-            <div class="col">
-              <h5>Trợ giúp</h5>
-              <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
-              </p>
-              <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
-              </p>
-              <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
-              </p>
-              <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
-              </p>
-              <p class="mb-0">
-                <a href="#">Trung tâm trợ giúp</a>
-              </p>
-            </div>
+             
         </div>
       </div>
     </section>
@@ -753,75 +836,7 @@
   </footer>
 
 
-  <script src="<?php echo e(URL::asset('assets/estay/js/vendor/modernizr-3.8.0.min.js')); ?>"></script>
-<script src="<?php echo e(URL::asset('assets/estay/js/vendor/jquery-3.4.1.min.js')); ?>"></script>
+ 
+<?php $__env->stopSection(); ?>
 
-<script src="<?php echo e(URL::asset('assets/js/plugins/tether.min.js')); ?>"></script>
-<script src="<?php echo e(URL::asset('assets/js/plugins/slick.min.js')); ?>"></script>
-<script src="<?php echo e(URL::asset('assets/js/plugins/slidereveal.min.js')); ?>"></script>
-<script src="<?php echo e(URL::asset('assets/js/plugins/toast.min.js')); ?>"></script>
-<script type="text/javascript">
-    window.paceOptions = {
-        ajax: false,
-        restartOnRequestAfter: false,
-    };
-</script>
-
-<script src="<?php echo e(URL::asset('assets/estay/js/vendor/bootstrap.bundle.min.js')); ?>"></script>
-<script src="<?php echo e(URL::asset('assets/estay/js/vendor/moment.min.js')); ?>"></script>
-<script src="<?php echo e(URL::asset('assets/estay/js/vendor/daterangepicker.min.js')); ?>"></script>
-<script src="<?php echo e(URL::asset('assets/estay/js/vendor/js/vendor/slick.min.js')); ?>"></script>
-<script src="<?php echo e(URL::asset('assets/estay/js/js/plugins.js')); ?>"></script>
-<script src="<?php echo e(URL::asset('assets/estay/js/main.js')); ?>"></script>
-
-
- --}}
-
-<script src="<?php echo e(URL::asset('assets/js/home_init.js')); ?>"></script>
-<script type="text/javascript">
-</script>
-<?php echo csrf_field(); ?>
-
-<?php if($static_data['user'] && $owner_request): ?>
-<div class="modal fade" id="upgrade-confirm-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle"><?php echo e($static_data['strings']['confirm_action']); ?></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <?php echo e($static_data['strings']['upgrade_request_confirm']); ?>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="primary-button" data-dismiss="modal"><?php echo e($static_data['strings']['close']); ?></button>
-                <a href="#" data-id="<?php echo e($static_data['user']->id); ?>" class="primary-button confirm-request" data-dismiss="modal"><?php echo e($static_data['strings']['request']); ?></a>
-            </div>
-            <script type="text/javascript">
-                $(document).ready(function(){
-                    $('.confirm-request').click(function(e){
-                        e.preventDefault();
-                        var id = $(this).data('id'),
-                            token = $('[name="_token"]').val();
-                        $.ajax({
-                            url: '<?php echo e(url('/user-request')); ?>',
-                            type: 'post',
-                            data: {_token: token, id: id},
-                               success: function(){
-                               toastr.success('<?php echo e($static_data['strings']['text_for_request']); ?>');
-                                setTimeout(function(){location.reload();}, 1200);
-
-                        }
-                    });
-                });
-                });
-            </script>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
-</body>
-</html>
+<?php echo $__env->make('layouts.home_layout', ['static_data', $static_data], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

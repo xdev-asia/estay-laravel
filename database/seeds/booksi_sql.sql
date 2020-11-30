@@ -931,7 +931,7 @@ INSERT INTO `strings` (`id`, `key`, `default`, `string`, `code`, `is_backend`) V
 (536, 'copyright_text', 1, 'Copyright text (HTML allowed)', 'en', 1),
 (537, 'footer_social', 1, 'Show Social icons in Footer', 'en', 1),
 (538, 'footer', 1, 'Footer', 'en', 0),
-(539, 'powered_by', 1, '<a href=\"http://example.com\">Powered by <strong>Booksi</strong> cms</a>', 'en', 0),
+(539, 'powered_by', 1, '', 'en', 0),
 (540, 'footer_widget', 1, 'Footer Widget', 'en', 0),
 (541, 'slider_background', 1, 'Slider background image (min dimension 1920x800). Current image: ', 'en', 1),
 (542, 'qs_background', 1, 'Quick Search background image (min dimension 1920x800). Current image: ', 'en', 1),

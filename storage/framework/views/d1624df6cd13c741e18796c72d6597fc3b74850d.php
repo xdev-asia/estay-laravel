@@ -27,7 +27,7 @@
                 <div id="header-left" class="col l10 m12 s12 header-col">
                     <div id="logo" class="col s6 m6">
                         <p class="date-text"><?php echo e(date('l, jS \of F Y')); ?></p>
-                        <a href="<?php echo e(route('admin_dashboard')); ?>" class="brand-logo"><?php echo e(get_string('booksi')); ?><span><?php echo e(get_string('cms')); ?></span></a>
+                        <a href="<?php echo e(route('admin_dashboard')); ?>" class="brand-logo">Estay<span><?php echo e(get_string('cms')); ?></span></a>
                     </div>
                     <div id="navigation">
                         <ul class="hide-on-med-and-down clearfix">
