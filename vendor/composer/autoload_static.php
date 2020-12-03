@@ -8,8 +8,8 @@ class ComposerStaticInitb4f69f20ac4595455591ebe987e0f526
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '1d1b89d124cc9cb8219922c9d5569199' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
@@ -17,11 +17,12 @@ class ComposerStaticInitb4f69f20ac4595455591ebe987e0f526
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
+        'a98e6aefe38031f7d6763703855cc099' => __DIR__ . '/..' . '/froiden/laravel-installer/src/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        'a98e6aefe38031f7d6763703855cc099' => __DIR__ . '/..' . '/froiden/laravel-installer/src/functions.php',
-        '377d15ea71be0306a9829d9f78207a1c' => __DIR__ . '/..' . '/torann/currency/src/helpers.php',
         'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
+        '377d15ea71be0306a9829d9f78207a1c' => __DIR__ . '/..' . '/torann/currency/src/helpers.php',
+        '4a1f389d6ce373bda9e57857d3b61c84' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/helpers.php',
         '92c1b38d4675fce54491776e674b6d3a' => __DIR__ . '/../..' . '/app/Http/Helpers/Helper.php',
     );
 
@@ -114,6 +115,7 @@ class ComposerStaticInitb4f69f20ac4595455591ebe987e0f526
             'Dotenv\\' => 7,
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
+            'DebugBar\\' => 9,
         ),
         'C' => 
         array (
@@ -122,6 +124,10 @@ class ComposerStaticInitb4f69f20ac4595455591ebe987e0f526
             'Collective\\Html\\' => 16,
             'ClassPreloader\\' => 15,
             'Carbon\\' => 7,
+        ),
+        'B' => 
+        array (
+            'Barryvdh\\Debugbar\\' => 18,
         ),
         'A' => 
         array (
@@ -320,6 +326,10 @@ class ComposerStaticInitb4f69f20ac4595455591ebe987e0f526
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+        'DebugBar\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar',
+        ),
         'Cron\\' => 
         array (
             0 => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron',
@@ -339,6 +349,10 @@ class ComposerStaticInitb4f69f20ac4595455591ebe987e0f526
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
+        'Barryvdh\\Debugbar\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src',
         ),
         'App\\' => 
         array (
@@ -433,6 +447,7 @@ class ComposerStaticInitb4f69f20ac4595455591ebe987e0f526
     );
 
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'CreateActivitiesTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_11_144041_create_activities_table.php',
         'CreateAdminsTable' => __DIR__ . '/../..' . '/database/migrations/2016_10_25_204058_create_admins_table.php',
         'CreateBlogContentsTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_22_141121_create_blog_contents_table.php',
@@ -448,6 +463,8 @@ class ComposerStaticInitb4f69f20ac4595455591ebe987e0f526
         'CreateLanguagesTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_22_091242_create_languages_table.php',
         'CreateLocationContentsTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_24_210951_create_location_contents_table.php',
         'CreateLocationsTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_24_161838_create_locations_table.php',
+        'CreateMessageThreadsTable' => __DIR__ . '/../..' . '/database/migrations/2017_09_26_192142_create_message_threads_table.php',
+        'CreateMessagesTable' => __DIR__ . '/../..' . '/database/migrations/2017_09_26_192159_create_messages_table.php',
         'CreateOwnersTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_26_184022_create_owners_table.php',
         'CreatePageContentsTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_23_144329_create_page_contents_table.php',
         'CreatePagesTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_01_180912_create_pages_table.php',

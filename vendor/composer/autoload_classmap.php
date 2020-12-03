@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'CreateActivitiesTable' => $baseDir . '/database/migrations/2017_02_11_144041_create_activities_table.php',
     'CreateAdminsTable' => $baseDir . '/database/migrations/2016_10_25_204058_create_admins_table.php',
     'CreateBlogContentsTable' => $baseDir . '/database/migrations/2016_11_22_141121_create_blog_contents_table.php',
@@ -21,6 +22,8 @@ return array(
     'CreateLanguagesTable' => $baseDir . '/database/migrations/2016_11_22_091242_create_languages_table.php',
     'CreateLocationContentsTable' => $baseDir . '/database/migrations/2017_01_24_210951_create_location_contents_table.php',
     'CreateLocationsTable' => $baseDir . '/database/migrations/2017_01_24_161838_create_locations_table.php',
+    'CreateMessageThreadsTable' => $baseDir . '/database/migrations/2017_09_26_192142_create_message_threads_table.php',
+    'CreateMessagesTable' => $baseDir . '/database/migrations/2017_09_26_192159_create_messages_table.php',
     'CreateOwnersTable' => $baseDir . '/database/migrations/2016_12_26_184022_create_owners_table.php',
     'CreatePageContentsTable' => $baseDir . '/database/migrations/2016_11_23_144329_create_page_contents_table.php',
     'CreatePagesTable' => $baseDir . '/database/migrations/2016_11_01_180912_create_pages_table.php',

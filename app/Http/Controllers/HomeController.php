@@ -52,6 +52,13 @@ class HomeController extends Controller
             'properties', 'static_data', 'f_locations'));
     }
 
+    public function single() {
+        $static_data = $this->static_data;
+        $default_language = $this->default_language;
+
+        return view('home.single', compact('static_data', 'default_language'));
+    }
+
     // Contact page
     public function contact(){
         // Get Static Data

@@ -273,7 +273,8 @@ Route::get('/logout', 'UserController@logout')->name('logout');
 Route::get('/page/{alias}', 'PageController@index')->name('page');
 Route::get('/blog/post/{alias}', 'BlogController@post');
 Route::get('/explore/properties', 'ExploreController@properties')->name('explore_properties');
-Route::get('/explore/services', 'ExploreController@services')->name('explore_services');
+
+Route::get('/single', 'HomeController@single')->name('single');
 
 // Payments
 Route::post('/payment-page', 'PaymentController@index')->name('booking_pay_page');
