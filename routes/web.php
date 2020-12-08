@@ -254,6 +254,7 @@ Route::get('/update-booksi', 'UpdateController@update');
 
 // Home Routes
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/single', 'HomeController@single')->name('single');
 Route::get('/user/resend', 'UserController@resend')->name('resend_activation_mail');
 Route::post('/user/changeLanguage', 'UserController@changeLanguage')->name('change_language');
 Route::post('/user/changeCurrency', 'UserController@changeCurrency')->name('change_currency');
