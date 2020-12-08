@@ -380,7 +380,7 @@
                 <p class="lead mb-0">5.600.000đ</p>             
               </div>
               <div class="d-flex align-items-center">
-                <a href="single.html" class="btn btn-estay-primary">Mua ngay</a>
+                <a href="{{ route('single') }}" class="btn btn-estay-primary">Mua ngay 1</a>
               </div>
             </div>
           </div>

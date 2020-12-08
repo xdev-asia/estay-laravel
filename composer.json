@@ -17,7 +17,8 @@
         "froiden/laravel-installer": "1.2",
         "chencha/share": "^5.2",
         "torann/currency": "1.0.10",
-        "laravel/socialite": "*"
+        "laravel/socialite": "*",
+        "barryvdh/laravel-debugbar": "~2.4"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

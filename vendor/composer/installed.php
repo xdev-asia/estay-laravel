@@ -6,11 +6,20 @@
     'aliases' => 
     array (
     ),
-    'reference' => '825613d236c5207eac60bad86e17ec1ef878f615',
+    'reference' => 'c50bf52d8627c39c83c8684b921faa1cad0b3e0a',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
   array (
+    'barryvdh/laravel-debugbar' => 
+    array (
+      'pretty_version' => 'v2.4.3',
+      'version' => '2.4.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd7c88f08131f6404cb714f3f6cf0642f6afa3903',
+    ),
     'chencha/share' => 
     array (
       'pretty_version' => '5.2.1',
@@ -585,7 +594,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '825613d236c5207eac60bad86e17ec1ef878f615',
+      'reference' => 'c50bf52d8627c39c83c8684b921faa1cad0b3e0a',
     ),
     'laravel/socialite' => 
     array (
@@ -631,6 +640,15 @@
       array (
       ),
       'reference' => 'a43db59e621e8e8d72321e885d1610509cc7b096',
+    ),
+    'maximebf/debugbar' => 
+    array (
+      'pretty_version' => '1.13.1',
+      'version' => '1.13.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'afee79a236348e39a44cb837106b7c5b4897ac2a',
     ),
     'maxmind-db/reader' => 
     array (
